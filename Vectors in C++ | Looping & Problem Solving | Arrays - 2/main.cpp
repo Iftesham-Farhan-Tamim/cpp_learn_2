@@ -102,6 +102,7 @@
 //     }
 // }
 // ............................................................................................
+// //Find the last occurrence of an element x in a given array.
 // #include <bits/stdc++.h>
 // using namespace std;
 
@@ -129,11 +130,98 @@
 //     cout << ans << endl;
 // }
 // ............................................................................................
+// //Count the number of occurrences of a particuler element x.
 // #include <bits/stdc++.h>
 // using namespace std;
 
 // int main() {
+//     vector<int> v(6);
+//     int x = 3;
+//     int ans = 0;
 
+//     for(int i=0; i<v.size(); i++) {
+//         cin >> v[i];
+//     }
+
+//     for(int i=0; i<v.size(); i++) {
+//         if(x == v[i]) {
+//             ans++;
+//         }
+//     }
+
+//     cout << ans << endl;
+// }
+// ............................................................................................
+// //Count the number of element strictly greater than value x.
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+//     vector<int> v(6);
+//     int x = 3;
+//     int count = 0;
+
+//     for(int i=0; i<v.size(); i++) {
+//         cin >> v[i];
+//     }
+
+//     for(int i=0; i<v.size(); i++) {
+//         if(x < v[i]) {
+//             count++;
+//         }
+//     }
+
+//     cout << count << endl;
+// }
+// ............................................................................................
+// //Check if the given array is sorted or not.
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+//     vector<int> v(5);
+//     bool isSorted = true; 
+
+//     for(int i = 0; i < v.size(); i++) {
+//         cin >> v[i];
+//     }
+
+//     for(int i = 0; i < v.size() - 1; i++) {  
+//         if(v[i] > v[i + 1]) { 
+//             isSorted = false; 
+//             break; 
+//         }
+//     }
+
+//     if(isSorted) {
+//         cout << "Sorted" << endl;
+//     } else {
+//         cout << "Not Sorted" << endl;
+//     }
+// }
+// ............................................................................................
+// //Find the difference between the sum of elements at even 
+// //indices to the sum of elements at odd indices
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+//     vector<int> v(6);
+//     int ans = 0;
+
+//     for(int i=0; i<v.size(); i++) {
+//         cin >> v[i];
+//     }
+
+//     for(int i=0; i<v.size(); i++) {
+//         if(i%2 == 0) {
+//             ans+=v[i];
+//         } else {
+//             ans-=v[i];
+//         }
+//     }
+
+//     cout << ans << endl;
 // }
 // ............................................................................................
 // #include <bits/stdc++.h>
@@ -142,5 +230,3 @@
 // int main() {
 
 // }
-// ............................................................................................
-
