@@ -202,6 +202,7 @@
 // ............................................................................................
 // //Find the difference between the sum of elements at even 
 // //indices to the sum of elements at odd indices
+
 // #include <bits/stdc++.h>
 // using namespace std;
 
@@ -223,10 +224,7 @@
 
 //     cout << ans << endl;
 // }
-// ............................................................................................
-// #include <bits/stdc++.h>
-// using namespace std;
 
-// int main() {
-
-// }
+// Test case:
+// 1 to 5
+// 1-2+3-4+5-6
