@@ -157,7 +157,7 @@
 //     int left_ptr = 0;
 //     int right_ptr = v.size() - 1;
 
-//     while(left_ptr < right_ptr) {
+//     while(left_ptr <= right_ptr) {
 //         if(abs(v[left_ptr]) < abs(v[right_ptr])) {
 //             ans.push_back(v[right_ptr] * v[right_ptr]);
 //             right_ptr--;
@@ -166,6 +166,8 @@
 //             left_ptr++;
 //         }
 //     }
+
+//     reverse(ans.begin(), ans.end());
 
 //     for(int i=0; i<v.size(); i++) {
 //         cout << ans[i] << " ";
@@ -183,12 +185,13 @@
 //         cin >> ele;
 //         v.push_back(ele);
 //     }
+
 //     sortedSquareArray(v);
 // }
 
 // input:
 // 5
-// -10 -3 2 5 6
+// -10 -3 2 4 6
 
 // output:
-// 100 36 25 9 100
+// 4 9 16 36 100
