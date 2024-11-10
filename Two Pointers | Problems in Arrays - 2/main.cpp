@@ -195,3 +195,49 @@
 
 // output:
 // 4 9 16 36 100
+// ............................................................................................
+// //Without function
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+
+// 	int n;
+// 	cin >> n;
+
+// 	vector<int> v;
+// 	for (int i = 0; i < n; i++) {
+// 		int ele;
+// 		cin >> ele;
+// 		v.push_back(ele);
+// 	}
+
+// 	vector<int> ans;
+
+// 	int lp = 0;
+// 	int rp = v.size() - 1;
+
+// 	while (lp <= rp) {
+// 		if (abs(v[lp]) > abs(v[rp])) {
+// 			ans.push_back(v[lp] * v[lp]);
+// 			lp++;
+// 		} else {
+// 			ans.push_back(v[rp] * v[rp]);
+// 			rp--;
+// 		}
+// 	}
+
+// 	reverse(ans.begin(), ans.end());
+
+// 	for (int i = 0; i < v.size(); i++) {
+// 		cout << ans[i] << " ";
+// 	}
+// }
+
+// input:
+// 5
+// -10 -3 2 4 6
+
+// output:
+// 4 9 16 36 100
