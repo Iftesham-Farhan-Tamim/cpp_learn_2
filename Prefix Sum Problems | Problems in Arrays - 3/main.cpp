@@ -38,7 +38,7 @@
 
 // prefix sum i = sum(a0_ _ _ _ai)
 // suffix sum i+1 = sum(ai+1_ _ _ _an-1)
-// prefix sum i + suffix sum i+1 = total sum
+// prefix sum i + suffix sum i+1 = total sum of the array
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -82,5 +82,52 @@
 // output:
 // 1
 // ............................................................................................
+// //Without using function
 
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+
+// 	int n;
+// 	cin >> n;
+
+// 	vector<int> v;
+
+// 	for (int i = 0; i < n; i++) {
+// 		int ele;
+// 		cin >> ele;
+// 		v.push_back(ele);
+// 	}
+
+// 	int ts = 0;
+// 	for (int i = 0; i < v.size(); i++) {
+// 		ts += v[i];
+// 	}
+
+// 	int ps = 0;
+// 	bool flag = false;
+// 	for (int i = 0; i < v.size(); i++) {
+// 		ps += v[i];
+
+// 		int ss = ts - ps;
+
+// 		if (ss == ps) {
+// 			flag = true;
+// 		}
+// 	}
+
+// 	if (flag) {
+// 		cout << flag << endl;
+// 	} else {
+// 		cout << flag << endl;
+// 	}
+// }
+
+// input:
+// 5
+// 6 2 4 3 1
+
+// output:
+// 1
 // ............................................................................................
