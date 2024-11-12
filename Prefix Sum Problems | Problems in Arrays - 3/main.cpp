@@ -137,8 +137,8 @@
 
 // Note : The value of l and r in queries follow 1-based indexing.
 
-#include <bits/stdc++.h>
-using namespace std;
+// #include <bits/stdc++.h>
+// using namespace std;
 
 // index -> 0 1 2 3 4 5 6
 // vector -> 0 x1 x2
