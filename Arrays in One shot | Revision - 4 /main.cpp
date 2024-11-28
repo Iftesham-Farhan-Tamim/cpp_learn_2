@@ -128,23 +128,205 @@
 // //Given a vector arr[] sorted in increasing order. Return an array of squares
 // //of each number sorted in increasing order, where size of vector 1<size<101.
 
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+
+// 	int n;
+// 	cin >> n;
+// 	vector<int> v;
+// 	vector<int> a;
+
+// 	for (int i = 0; i < n; i++) {
+// 		int ele;
+// 		cin >> ele;
+// 		v.push_back(ele);
+// 	}
+
+// 	int lp = 0;
+// 	int rp = v.size() - 1;
+
+// 	while (lp <= rp) {
+// 		if (abs(v[lp]) > abs(v[rp])) {
+// 			a.push_back(v[lp]*v[lp]);
+// 			lp++;
+// 		} else {
+// 			a.push_back(v[rp]*v[rp]);
+// 			rp--;
+// 		}
+// 	}
+
+// 	reverse(a.begin(), a.end());
+
+// 	for (int i = 0; i < a.size(); i++) {
+// 		cout << a[i] << " ";
+// 	}
+// }
+
+// input:
+// 6
+// -4 -3 -1 0 2 10
+
+// output:
+// -4 -3 -1 0 2 10
 // ............................................................................................
 // //Given a vector arr[] sorted in increasing order of n size and an integer x.
 // //find the number of unique pairs that exist in the array whose absolute sum is exactly x.
 
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+
+// 	int n;
+// 	cin >> n;
+// 	vector<int> v;
+
+// 	for (int i = 0; i < n; i++) {
+// 		int ele;
+// 		cin >> ele;
+// 		v.push_back(ele);
+// 	}
+
+// 	int x;
+// 	cin >> x;
+// 	int count = 0;
+
+// 	int lp = 0;
+// 	int rp = v.size() - 1;
+
+// 	while (lp <= rp) {
+// 		if (v[lp] + v[rp] == x) {
+// 			count++;
+// 			lp++;
+// 			rp--;
+// 		} else if (v[lp] + v[rp] < x) {
+// 			lp++;
+// 		} else {
+// 			rp--;
+// 		}
+// 	}
+
+// 	cout << count;
+// }
+
+// input:
+// 6
+// 1 2 3 4 5 6
+// 7
+
+// output:
+// 3
+// ............................................................................................
+// //Given an array arr[] of n integers. Check whether it contains a triplet
+// //that sums up to zero.
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+
+// 	vector<int> v;
+
+// 	int n;
+// 	cin >> n;
+// 	int x;
+// 	cin >> x;
+// 	int count = 0;
+
+// 	for (int i = 0; i < n; i++) {
+// 		int ele;
+// 		cin >> ele;
+// 		v.push_back(ele);
+// 	}
+
+// 	sort(v.begin(), v.end());
+
+// 	for (int i = 0; i < v.size(); i++) {
+// 		int lp = i + 1;
+// 		int rp = v.size() - 1;
+// 		while (lp <= rp) {
+// 			int sum = v[i] + v[lp] + v[rp];
+// 			if (sum == x) {
+// 				count++;
+// 				lp++;
+// 				rp--;
+// 			} else if (sum < 0) {
+// 				lp++;
+// 			} else {
+// 				rp--;
+// 			}
+// 		}
+// 	}
+
+// 	cout << count << endl;
+// }
+
+// input:
+// 5
+// 0
+// -3 -1 0 1 2
+
+// output:
+// 2
 // ............................................................................................
 // //Given a vector array nums, print the count of triplets [nums[i], nums[j], nums[k]]
-// //such that i!=j, i!=k and j!=k, and nums[i] + nums[j] + nums[k] ==x. where k is an
+// //such that i!=j, i!=k and j!=k, and nums[i] + nums[j] + nums[k] == x. where k is an
 // //integer given by the user.
 
-// ............................................................................................
+// #include <bits/stdc++.h>
+// using namespace std;
 
-// ............................................................................................
+// int main() {
 
-// ............................................................................................
+// 	vector<int> v;
+// 	int n, k;
+// 	cin >> n >> k;
 
-// ............................................................................................
+// 	int count = 0;
+// 	int x;
+// 	cin >> x;
 
-// ............................................................................................
+// 	for (int i = 0; i < n; i++) {
+// 		int ele;
+// 		cin >> ele;
+// 		v.push_back(ele);
+// 	}
 
-// ............................................................................................
+// 	// Fix the element at index k
+// 	int fixedElement = v[k];
+
+// 	for (int i = 0; i < v.size(); i++) {
+// 		if (i == k) continue;  // Skip the index k as it is already fixed
+// 		int lp = i + 1;
+// 		int rp = v.size() - 1;
+// 		while (lp < rp) {
+// 			int sum = v[i] + v[lp] + fixedElement;
+// 			if (sum == x) {
+// 				count++;
+// 				lp++;
+// 				rp--;
+// 				// Skip duplicates for left pointer
+// 				while (lp < rp && v[lp] == v[lp - 1]) lp++;
+// 				// Skip duplicates for right pointer
+// 				while (lp < rp && v[rp] == v[rp + 1]) rp--;
+// 			} else if (sum < x) {
+// 				lp++;
+// 			} else {
+// 				rp--;
+// 			}
+// 		}
+// 	}
+
+// 	cout << count << endl;
+// }
+
+// input:
+// 5
+// 2
+// 0
+// -3 -1 0 1 2
+
+// output;
+// 1
