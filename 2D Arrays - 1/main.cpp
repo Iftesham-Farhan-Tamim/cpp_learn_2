@@ -35,6 +35,83 @@
 // 4 5 6 
 // 7 8 9 
 // ............................................................................................
+// // Write a program to display addication of two matrices entered by the user
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+
+// 	int r1, c1;
+// 	cin >> r1 >> c1;
+// 	int A[r1][c1];
+
+// 	for (int i = 0; i < r1; i++) {
+// 		for (int j = 0; j < c1; j++) {
+// 			cin >> A[i][j];
+// 		}
+// 	}
+
+// 	int r2, c2;
+// 	cin >> r2 >> c2;
+// 	int B[r2][c2];
+
+// 	for (int i = 0; i < r2; i++) {
+// 		for (int j = 0; j < c2; j++) {
+// 			cin >> B[i][j];
+// 		}
+// 	}
+
+// 	for (int i = 0; i < r1; i++) {
+// 		for (int j = 0; j < c1; j++) {
+// 			cout << A[i][j] << " ";
+// 		} cout << endl;
+// 	}
+// 	cout << endl;
+
+// 	for (int i = 0; i < r2; i++) {
+// 		for (int j = 0; j < c2; j++) {
+// 			cout << B[i][j] << " ";
+// 		} cout << endl;
+// 	}
+// 	cout << endl;
+
+// 	if (r1 != r2 || c1 != c2) {
+// 		cout << "Invalid matrix form";
+// 		return 0;
+// 	}
+
+// 	int C[r1][c1];
+// 	for (int i = 0; i < r1; i++) {
+// 		for (int j = 0; j < c1; j++) {
+// 			C[i][j] = A[i][j] + B[i][j];
+// 		}
+// 	}
+
+// 	for (int i = 0; i < r1; i++) {
+// 		for (int j = 0; j < c1; j++) {
+// 			cout << C[i][j] << " ";
+// 		} cout << endl;
+// 	}
+// }
+
+// input:
+// 2 2
+// 1 2 3 4
+// 2 2
+// 5 6 7 8
+
+
+// output:
+// 1 2 
+// 3 4 
+
+// 5 6 
+// 7 8 
+
+// 6 8 
+// 10 12 
+// ............................................................................................
 // // Write a program to display multiplication of two matrices entered by the user
 
 // #include<bits/stdc++.h>
@@ -63,6 +140,7 @@
 
 //     if(c1!=r2) {
 //         cout << "Matrix multiplication not possible for this input" << endl;
+//         return 0;
 //     }
 
 //     int C[r1][c2];
@@ -75,6 +153,11 @@
 //             }
 //         }
 //     }
+
+
+//      // A[i][k] represents the elements of the i-th row of matrix A.
+//      // B[k][j] represents the elements of the j-th column of matrix B.
+
 
 //     for(int i=0; i<r1; i++) {
 //         for(int j=0; j<c2; j++) {
