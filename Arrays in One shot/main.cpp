@@ -1,5 +1,5 @@
-// //Given two vectors arr1[] ans arr2[] of size m and n sorted in increasing order.
-// //Merge the two arrays into a single sorted array of size m+n.
+// // Given two vectors arr1[] ans arr2[] of size m and n sorted in increasing order.
+// // Merge the two arrays into a single sorted array of size m+n.
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -52,8 +52,8 @@
 // output:
 // 0 1 1 3 6 7 8 10 11 12 15 18
 // ............................................................................................
-// //Given a vector arr[] sorted in increasing order of size n and an integer x.
-// //find if there exists a pair in the array whose sum is exactly x.
+// // Given a vector arr[] sorted in increasing order of size n and an integer x.
+// // find if there exists a pair in the array whose sum is exactly x.
 
 // #include<bits/stdc++.h>
 // using namespace std;
@@ -88,8 +88,8 @@
 // output:
 // YES  
 // ............................................................................................
-// //Given a vector arr[] sorted in increasing order of n size and an integer x,
-// //find if there exists a pair in the array whose absolute difference is exactly x.
+// // Given a vector arr[] sorted in increasing order of n size and an integer x,
+// // find if there exists a pair in the array whose absolute difference is exactly x.
 
 // #include<bits/stdc++.h>
 // using namespace std;
@@ -125,9 +125,9 @@
 // output:
 // NO
 // ............................................................................................
-// //Given a vector arr[] sorted in increasing order. Return an array of squares
-// //of each number sorted in increasing order, where size of vector 1<size<101.
-
+// // Given a vector arr[] sorted in increasing order. Return an array of squares
+// // of each number sorted in increasing order, where size of vector 1<size<101.
+ 
 // #include <bits/stdc++.h>
 // using namespace std;
 
@@ -171,8 +171,8 @@
 // output:
 // -4 -3 -1 0 2 10
 // ............................................................................................
-// //Given a vector arr[] sorted in increasing order of n size and an integer x.
-// //find the number of unique pairs that exist in the array whose absolute sum is exactly x.
+// // Given a vector arr[] sorted in increasing order of n size and an integer x.
+// // find the number of unique pairs that exist in the array whose absolute sum is exactly x.
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -219,8 +219,8 @@
 // output:
 // 3
 // ............................................................................................
-// //Given an array arr[] of n integers. Check whether it contains a triplet
-// //that sums up to zero.
+// // Given an array arr[] of n integers. Check whether it contains a triplet
+// // that sums up to zero.
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -271,9 +271,9 @@
 // output:
 // 2
 // ............................................................................................
-// //Given a vector array nums, print the count of triplets [nums[i], nums[j], nums[k]]
-// //such that i!=j, i!=k and j!=k, and nums[i] + nums[j] + nums[k] == x. where k is an
-// //integer given by the user.
+// // Given a vector array nums, print the count of triplets [nums[i], nums[j], nums[k]]
+// // such that i!=j, i!=k and j!=k, and nums[i] + nums[j] + nums[k] == x. where k is an
+// // integer given by the user.
 
 // #include <bits/stdc++.h>
 // using namespace std;

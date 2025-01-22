@@ -60,7 +60,7 @@
 // 4 5 6 
 // 7 8 9 
 // ............................................................................................
-// // Write a program to display addication of two matrices entered by the user
+// // Write a program to display addition of two matrices entered by the user
 
 // #include <bits/stdc++.h>
 // using namespace std;
