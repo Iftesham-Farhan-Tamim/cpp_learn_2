@@ -1,7 +1,7 @@
-// //Given an integers array 'a', return  prefix sum/
-// //running sum in the same array without creating a
+// // Given an integers array 'a', return  prefix sum/
+// // running sum in the same array without creating a
 // // new array
-
+ 
 // #include <bits/stdc++.h>
 // using namespace std;
 
@@ -32,9 +32,9 @@
 // output:
 // 5 9 10 12 15
 // ............................................................................................
-// //Check if we can partition the array into two subarrays with
-// //equal sum. More formally, check that the prefix sum of a part
-// //of the array is equal to the suffix sum of rest of the array
+// // Check if we can partition the array into two subarrays with
+// // equal sum. More formally, check that the prefix sum of a part
+// // of the array is equal to the suffix sum of rest of the array
 
 // prefix sum i = sum(a0_ _ _ _ai)
 // suffix sum i+1 = sum(ai+1_ _ _ _an-1)
@@ -82,7 +82,7 @@
 // output:
 // 1
 // ............................................................................................
-// //Without using function
+// // Without using function
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -131,9 +131,9 @@
 // output:
 // 1
 // ............................................................................................
-// //Given an array of integer of size n. Answer q queries where
-// //you need to print the sum of values in a given range of indices
-// //from l to r (both included).
+// // Given an array of integer of size n. Answer q queries where
+// // you need to print the sum of values in a given range of indices
+// // from l to r (both included).
 
 // Note : The value of l and r in queries follow 1-based indexing.
 

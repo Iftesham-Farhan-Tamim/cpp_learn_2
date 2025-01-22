@@ -1,4 +1,4 @@
-// // Sort an array consisting of only os and 1s. (Using vector)
+ // // Sort an array consisting of only os and 1s. (Using vector)
 
 // #include<bits/stdc++.h>
 // using namespace std;
@@ -97,10 +97,10 @@
 // output:
 // 0 0 0 0 1 1 1 1
 // ............................................................................................
-// //Given an array of integers 'a', move all the even integers at the
-// //beginning of the array followed by all the odd integers. The
-// //relative order of odd or even integers does not mattter. Return
-// //an array that satisfies the condition.
+// // Given an array of integers 'a', move all the even integers at the
+// // beginning of the array followed by all the odd integers. The
+// // relative order of odd or even integers does not mattter. Return
+// // an array that satisfies the condition.
 
 // #include <bits/stdc++.h>
 // using namespace std;
