@@ -15,7 +15,7 @@
 // }
 
 // output:
-// 10
+// 14
 // ............................................................................................
 // // Given two numbers p & q, find the value p^q using a recursive function
 

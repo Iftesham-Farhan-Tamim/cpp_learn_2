@@ -23,6 +23,25 @@
 // ............................................................................................
 // // For a given array, find the sum of values of an array.
 
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int sumArray(int arr[], int n) {
+//     if (n == 0) return 0;  // Base case: If no elements left, return 0
+//     return sumArray(arr, n - 1) + arr[n - 1];  // Recursive call
+// }
+
+// int main() {
+//     int arr[] = {6, 1, 9, 3, 4};
+//     int n = sizeof(arr) / sizeof(arr[0]);
+//     cout << "Sum: " << sumArray(arr, n) << endl;  // Expected output: 23
+// }
+
+// output:
+// 23
+// ............................................................................................
+// // For a given array, find the Maximum Element in an Array.
+
 // #include<bits/stdc++.h>
 // using namespace std;
 

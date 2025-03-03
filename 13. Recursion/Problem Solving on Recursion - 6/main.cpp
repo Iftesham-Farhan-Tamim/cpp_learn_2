@@ -68,7 +68,7 @@
 // // The problem is to count all the possible paths on an m*n grid from top left
 // // (grid[0][0] to bottom right grid[m-1][n-1]).
 
-// // Having constraints that from each cell you can either ove only to right or down.
+// // Having constraints that from each cell you can either move only to right or down.
 
 // // m = 2, n = 3
 // // output: 3

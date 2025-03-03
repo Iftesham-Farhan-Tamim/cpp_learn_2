@@ -23,16 +23,20 @@
 // // write a program to check whether a given number is palindrome
 // // or not.
 
-// #include<bits/stdc++.h>
+// #include <bits/stdc++.h>
 // using namespace std;
 
 // bool f(int num, int *temp) {
-//     // base case
-//     if(num >= 0 and num <= 9) {
-//         return (num == (*temp)%10);
+//     // Base case: if num becomes 0, return true
+//     if (num == 0){
+//         return true;
 //     }
-//     bool result =  (f(num/10, temp) and (num%10) == ((*temp) % 10));
+
+//     bool result = (f(num / 10, temp) && (num % 10 == (*temp) % 10));
+
+//     // Move to the next digit in *temp
 //     (*temp) /= 10;
+
 //     return result;
 // }
 
@@ -40,8 +44,14 @@
 //     int num = 12621;
 //     int anotherNum = num;
 //     int *temp = &anotherNum;
-//     cout << f(num, temp);
+
+//     if (f(num, temp)) {
+//         cout << "Palindrome" << endl;
+//     }
+//     else {
+//         cout << "Not a Palindrome" << endl;
+//     }
 // }
 
 // output:
-// 0
+// Palindrome

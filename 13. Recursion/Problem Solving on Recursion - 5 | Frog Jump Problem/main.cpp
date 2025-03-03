@@ -18,8 +18,8 @@
 // 8
 // ............................................................................................
 // // Given a number n. Print if it is an armstrong number or not.
-// // An armstrong number is a number if the sum of every digit in that number
-// // raised to the power of total digits in that number is equal to the number.
+// //--> An armstrong number is a number if the sum of every digit in that number
+// //--> raised to the power of total digits in that number is equal to the number.
 
 // #include<bits/stdc++.h>
 // using namespace std;
