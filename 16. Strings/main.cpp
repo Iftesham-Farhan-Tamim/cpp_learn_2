@@ -458,3 +458,70 @@
 
 //     cout << longestOnes(str, k) << endl;
 // }
+// ............................................................................................
+// // String Function
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+// 	int n, q;
+// 	cin >> n >> q;
+
+// 	string s;
+// 	cin >> s;
+
+// 	while (q--) {
+// 		string cmd;
+// 		cin >> cmd;
+
+// 		if (cmd == "pop_back") {
+// 			s.pop_back();
+// 		} else if (cmd == "front") {
+// 			cout << s.front() << endl;
+// 		} else if (cmd == "back") {
+// 			cout << s.back() << endl;
+// 		} else if (cmd == "sort") {
+// 			int x, y;
+// 			cin >> x >> y;
+// 			if (x > y) swap(x, y);
+// 			sort(s.begin() + x - 1, s.begin() + y);
+// 		} else if (cmd == "reverse") {
+// 			int x, y;
+// 			cin >> x >> y;
+// 			if (x > y) swap(x, y);
+// 			reverse(s.begin() + x - 1, s.begin() + y);
+// 		} else if (cmd == "print") {
+// 			int x;
+// 			cin >> x;
+// 			cout << s[x - 1] << endl;
+// 		} else if (cmd == "substr") {
+// 			int x, y;
+// 			cin >> x >> y;
+// 			if (x > y) swap(x, y);
+// 			cout << s.substr(x - 1, (y - x) + 1) << endl;
+// 		} else if (cmd == "push_back") {
+// 			char x;
+// 			cin >> x;
+// 			s.push_back(x);
+// 		}
+// 	}
+// }
+
+// input:
+// 18 8
+// assiutinupperegypt
+// substr 1 6
+// sort 5 8
+// pop_back
+// back
+// reverse 1 6
+// front
+// push_back i
+// print 4
+
+// output:
+// assiut
+// p
+// n
+// s
